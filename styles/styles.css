@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  background: linear-gradient(to bottom, pink, white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Shrikhand", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding: 35px;
+  font-size: 50px;
+  font-family: "Indie Flower", cursive, sans-serif;
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  box-sizing: border-box;
+}
+@media (max-width: 400px) {
+  .main-div {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+.main-div .income-description,
+.main-div .expense-description {
+  color: whitesmoke;
+  background-color: #ff9aba;
+  font-size: 20px;
+}
+@media (max-width: 400px) {
+  .main-div .income-description,
+  .main-div .expense-description {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+.main-div .income-amount {
+  color: green;
+}
+.main-div .expense-amount {
+  color: red;
+}
+.main-div label {
+  display: block;
+  padding: 10px;
+}
+.main-div input {
+  margin: 5px;
+}
+@media (max-width: 400px) {
+  .main-div input {
+    padding: 1px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-div button {
+    padding: 1px;
+    font-size: 10px;
+  }
+}
+.main-div .income {
+  display: flex;
+  flex-direction: column;
+}
+.budget .total-budget {
+  color: white;
+  background-color: #ff9aba;
+  width: 200px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+@media (max-width: 400px) {
+  .budget .total-budget {
+    padding: 5px;
+    font-size: 10px;
+  }
+}
+.budget label {
+  display: block;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */
