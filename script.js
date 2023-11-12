@@ -30,7 +30,7 @@ let totalBudgetValue = totalBudget.value
 
 
 class Budget {
-    constructor() {
+    constructor() { // This links my properties to my methods
         this.incomeDescription = document.getElementById('income-description');
         this.incomeDescriptionValue = incomeDescription.value
         this.incomeAmount = document.getElementById('income-amount');
@@ -73,7 +73,7 @@ class Budget {
         
     }
 
-    addExpense() {
+    addExpense() {// create li element and adds user input as value
         let liExpense = document.createElement('li');
         liExpense.innerHTML = this.expenseDescriptionValue + ' ' + this.expenseAmountValue;
         this.expenseDescriptionList.appendChild(liExpense)
@@ -85,7 +85,7 @@ class Budget {
         }
     }
 
-    expenseTotal() {
+    expenseTotal() {// create li element and adds user input as value
         let amount = Number(this.expenseAmountValue);
         eAmount = eAmount + amount;
         totalExpense.value = eAmount
@@ -94,7 +94,7 @@ class Budget {
         } 
     }
 
-    budgetTotal() {
+    budgetTotal() {// create li element and adds user input as value
         this.totalBudget.value = tAmount - eAmount;
 
         if (this.totalBudget.value === '0') {
@@ -109,7 +109,7 @@ class Budget {
 
 
 
-function addIncome() {
+function addIncome() { // calls methods
     let incomeBudget = new Budget();
     incomeBudget.addIncome();
     incomeBudget.incomeTotal();
@@ -117,12 +117,12 @@ function addIncome() {
     console.log('btn works')
 }
 
-function addExpense() {
+function addExpense() {//calls methods
     let expenseBudget = new Budget();
     expenseBudget.addExpense();
     expenseBudget.expenseTotal();
     expenseBudget.budgetTotal()
 }
 
-incomeDescriptionBtn.addEventListener('click', addIncome)
+incomeDescriptionBtn.addEventListener('click', addIncome)// listens for events
 expenseDescriptionBtn.addEventListener('click',addExpense)
